@@ -1,0 +1,96 @@
+<body>
+    <div class="ch-name">
+        <h2>​Ethics & Information Security</h2>
+        <hr>    
+    </div>
+    <article class="cb">
+        <p>INFORMATION SECURITY: the protection of information from accidental or intentional misuse by people with/outside the organization.</p>
+        <p>DOWNTIME: the period of time when a system is unavailable/inaccessible.</p>
+        <p>- No company can be 100%, standard is 99.99% of time (five nines = big names)</p>
+        <h3>Hackers and Malware</h3>
+        <p>HACKERS: experts in technology that use their expertise/knowledge to gain access into a computer network.</p>
+        <p>- Black hat hackers/White hat hackers</p>
+        <p>ETHICAL HACKERS (Bug Bounty Programs: crowdsourcing initiative which rewards users for discovering and reporting bugs/vulnerabilities).</p>
+        <div class="prof-notes">
+            <p>Apple = $2 million reward. Paid more = go to black market, criminals pay more. Many types of hackers (in textbook)</p>
+        </div>
+        <p>MALWARE: any software intended to cause harm, damage, or disable the target.</p>
+        <ul class="u-latin">
+            <li>Virus: any software written with malicious intent to cause damage or annoyance.</li>
+            <li>Worm: similar to viruses, however it will self-replicate and spread across other computers/networks.</li>
+            <li>Adware: a software which pretends to serve a useful purpose, but it displays ads without the consent of users.</li>
+            <p class="subtitle">Popup ads</p>
+            <li>Spyware: a special type of adware that collects and transmits data about the user.</li>
+            <li>Ransomware: malicious program that infects computers, encrypts the files and asks for money.</li>
+            <div class="prof-notes">
+                <ul>
+                    <li>One of the most dangerous ones right now, especially during COVID (target employees at home); billion dollar industry currently with bitcoin - remain anonymous</li>
+                    <a href="https://www.ransomware.live"  title="aaaaaaaaaaaaaaaaa">www.ransomware.live<div class="pixel"></div></a>
+                    <li>Typically against companies, locks computer and demands money to unlock or else it deletes the encrypted files; double-ransom - will demand more or else publish on web for free</li>
+                </ul>    
+            </div>
+            <li>Scareware: a malicious type of adware that collects/transmits data about the user.</li>
+            <div class="prof-notes">
+                <p>uBlock Origin - Firefox</p>
+            </div>
+            <li>Denial of Service Attacks: floods website/server with requests.</li>
+            <div class="prof-notes">
+                <p>Cloudflare - sees if you are machine or human, DDoS protection</p>
+            </div>
+        </ul>
+    </article>
+    <article class="cb">
+        <h3>Protection from Security Threats (2 Lines of Defense)</h3>
+        <h4>People</h4>
+        <h5>Threats</h5>
+        <p>PERSONALLY IDENTIFIABLE INFORMATION (PII): any data that can identify an individual</p>
+        <p>INSIDERS: legitimate users who purposely or accidentally misuse their access to information and cause a security incident.</p>
+        <div class="prof-notes">
+            <p>Typically due to grudges; reason why they wait until they let you go; pink slip</p>
+        </div>
+        <p>SOCIAL ENGINEERING: hackers using their social skills to reveal information of other employees/people.</p>
+        <p class="subtitle">Could be through phone, email, false/stolen identity, try to convince you</p>
+        <p>DUMPSTER DIVING: looking through firm/people’s trash.</p>
+        <h5>Protections</h5>
+        <p>INFORMATION SECURITY POLICY: the rules to maintain security (ex. changing password every 30 days, log off before leaving).</p>
+        <p>INFORMATION SECURITY PLAN: details on how the information security policy will be implemented (what is allowed to be downloaded, password complexity, virus protection, BYOD).</p>
+        <h4>Technology</h4>
+        <div class="comment">
+            <p>https://haveibeenpwned.com/ - tool to check for data breaches</p>
+        </div>
+        <h5>People: Authentication & Authorization</h5>
+        <p>AUTHENTICATION: confirm user’s identity (ex. user name, password).</p>
+        <p>AUTHORIZATION: provide users with permissions (ex. access level limits, limit hours…etc.).</p>
+        <p class="subtitle">* Both methods protect against identity theft through Phishing, Spear Phishing, Pharming (rerouting requests from legitimate sites to fake ones; near impossible to protect yourself from).</p>
+        <p>SINGLE FACTOR AUTHENTICATION: (username, password), two-factor authentication (username, password + token), multifactor authentication (more than two ways to authenticate, biometric).</p>
+        <p class="subtitle">SIM Swapping: call provider and pretend to be you with all your info, convince sales-rep, they move their number to your device, steal your number, bypass 2FA; you can lock phone from being ported (lock SIM) to prevent</p>
+        <h5>Data</h5>
+        <p>PRIVELEDGE ESCALATION: hackers grant themselves elevated access to the system (guest account → administrator)</p>
+        <ul class="l-latin">
+            <li>VERTICAL PRIVILEDGE ESCALATION: attackers grant themselves higher access level to another account (employee → manager → administrator; bottom-to-top)</li>
+            <li>HORIZONTAL PRIVILEDGE ESCALATION: attackers grant themselves same access level but to different accounts (employee ←→ employee ←→ employee; steal until done, most common)</li>
+        </ul>
+        <h6>Technologies:</h6>
+        <ol>
+            <li>CONTENT FILTERING: when organizations user software to filter content (ex. emails).</li>
+            <li>ENCRYPTION: scrambles information into different formats which requires a key/password to decrypt it and bring it back to its original format.</li>
+            <ul>
+                <li>PUBLIC KEY ENCRYPTION (PKE)</li>
+                <img src="imgs/PKE.png" style="width: 50%;">
+                <p class="subtitle">Weakness: can’t ensure it’s real, need to go through separate company to verify</p>
+                <li>DIGITAL CERTIFICATE: a file which identifies people/organizations.</li>
+            </ul>
+            <li>FIREWALL: a software/hardware which guards the company’s network analyzing incoming/outcoming traffic/data.</li>
+            <li>ANTIVIRUS</li>
+        </ol>
+        <h5>Attacks (Detection & Response)</h5>
+        <p>NETWORK BEHAVIOR ANALYSIS (NBA): a software that collects firm’s computer network traffic patterns to identify unusual/suspicious operations, unknown patterns (looks for an outlier; flags it, but does not stop it).</p>
+        <p>INTRUSION DETECTION SYSTEM (IDS): a full time monitoring tool to search for known patterns in network traffic to identify intruders. It flags raises an alarm once a threat occurs.</p>
+        <p>INTRUSION PROTECTION SYSTEM (IPS): a system which block/drop suspiscious traffic flagged by NBA/IDS.</p>
+        <p class="subtitle">* organizations usually have 2 of these 3</p>
+    </article>
+    <div class="ce">
+        <center><p>Chapter End!!</p></center>
+        <img src="../../../assets/miku.gif">
+    </div>
+</body>

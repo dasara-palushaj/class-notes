@@ -1,0 +1,78 @@
+<body>
+    <div class="ch-name">
+        <h2>​Database Systems</h2>
+        <hr>    
+    </div>
+    <article class="cb">
+        <ul>
+            <li>Good decisions require good information derived from raw facts.</li>
+            <li>Data is managed most efficiently when stored in a database.</li>
+            <li>Databases evolved from computer file systems.</li>
+        </ul>
+        <h3>Why Databases?</h3>
+        <ul>
+            <li>Business</li>
+            <ul>
+                <li>Helps figure out who customers are, what products are being sold, who is employed, who owes money vice versa.</li>
+                <li>Storing immense collections of data (AT&T: trillions of phone calls, 70k calls/sec; Google: 91 million searches/day)</li>
+            </ul>
+            <li>Research</li>
+            <li>Administration</li>
+        </ul>
+        <p class="def">DATA: <i>raw</i> facts, or facts that have not yet been processed to reveal their meaning to the end user.</p>
+        <h3>Data vs. Information</h3>
+        <p>Data; the building blocks of information. Information; the result of processing data to reveal meaning; requires context.</p>
+        <p>Data -> Infomation -> Knowledge</p>
+        <p class="def">INFORMATION: the result of processing raw data to reveal its meaning. Consists of transformed data and facilitates decison making.</p>
+        <p class="def">KNOWLEDGE: the body of info and facts about a specific subject. Knowledge implies familiarity, awareness, and understanding of information as it applies to an environment. A key characteristic is that new knowledge can be derived from old knowledge.</p>
+        <ul>
+            <li>Data constitutes the building blocks of information.</li>
+            <li>Information is produced by processed data.</li>
+            <li>Information is used to reveal the meaning of data.</li>
+            <li>Accurate, relevant, and timely information is the key to good decision making.</li>
+            <li>Good decision making is the key to organizational survival in a global environment.</li>
+        </ul>
+        <p class="def">DATA MANAGEMENT: a process that focuses on data collection, storage, and retrieval. <i>Common data management functions include additon, deletion, modification, and listing.</i></p>
+        <h3>Introducing the Database</h3>
+        <p>Databases store two things: end-user data and metadata.</p>
+        <p class="def">DATABASE: a shared, integrated computer structure that houses a collection of related data. <i>Contains two types of data: user data (raw facts) and metadata.</i></p>
+        <p class="def">METADATA: data <i>ABOUT</i> data; data about data characteristics and relationships. <i>i.e. name of data element, type of values (numeric, dates, text), and whether can be left empty.</i></p>
+        <p class="def">DATABASE MANAGEMENT SYSTEM (DBMS): collection of programs that manages the database structure and controls access to the data stored in the database.</p>
+        <h3>The DBMS as an Intermediary</h3>
+        <p><mark>END USER APPS –– DBMS –– DATABASE</mark></p>
+        <p class="subtitle">End Users with their Apps can access the database only through DBMS, which integrates many users' views of the data.</p>
+        <figure>
+            <img src="imgs/dbms-intermediary.png">
+            <figcaption>The DBMS manages the interaction between the End User and the Database</figcaption>
+        </figure>
+        <h3>Advantages of a DBMS</h3>
+        <ul>
+            <li>Improved data sharing</li>
+            <p class="subtitle">End users have better access to more and better-managed data; quicker responses.</p>
+            <li>Improved data security</li>
+            <p class="subtitle">Provides a framework for better enforcement of data privacy and security policies.</p>
+            <li>Better data integration</li>
+            <p class="subtitle">Wider access promotes an integrated view of operations & clear view of big picture.</p>
+            <li>Minimized data inconsistency</li>
+            <p class="subtitle">Greatly reduced in properly designed database.</p>
+            <li>Improved data access</li>
+            <p class="subtitle">Produce quick answers to ad hoc queries (spur-of-moment question). i.e. dollar volume of sales by product during the past six months.</p>
+            <li>Improved decison making</li>
+            <p class="subtitle">Better managed & improved access = generate better-quality info = better decisions.</p>
+            <li>Increased end-user productivity</li>
+            <p class="subtitle">Availability w/ tools to transform data into meaningful info = empowered users & decisions.</p>
+        </ul>
+        <p class="def">DATA INCONSISTENCY: condition in which different versions of the same data yield different (inconsistent) results. <i>i.e. repeat data.</i></p>
+        <p class="def">QUERY: question or task asked by end user of database in form of SQL code. Specific request for data manipulation issued by the end user or the application to the DBMS.</p>
+        <p class="def">QUERY RESULT SET: collection of data rows returned by a query.</p>
+        <p class="def">DATA QUALITY: comprehensive approach to ensuring the accuracy, validity, and timeliness of data.</p>
+        <h3>Types of Databases</h3>
+        <h4>By Users</h4>
+        <p>Single user: supports only one user at a time <i>i.e. a desktop database on a PC.</i></p>
+        <p>Multiuser: supports multiple users at the same time (workgroup and enterprise databases).</p>
+        <h4>By Location</h4>
+        <p>Centralized: data located at a single site.</p>
+        <p>Distributed: data spread across several different sites.</p>
+        <p>Cloud: created & maintained via cloud data services.</p>
+    </article>
+</body>

@@ -1,8 +1,13 @@
-.wrapper.index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    letter-spacing: 1px;
+    width: 750px;
+    margin: 10px auto;
+}
+
+body.index {
     text-align: center;
 }
 
@@ -12,5 +17,68 @@
 }
 
 img {
-    width: 600px;
+    width: 100%;
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+mark {
+    background-color: rgba(126, 193, 255, 0.733);
+    color: #fff;
+    font-weight: bold;
+}
+
+.comment, 
+.prof-notes {
+    background-color: rgba(94, 177, 255, 0.575);
+    margin: 10px 0 10px 40px;
+    position: relative;
+}
+
+.comment::before, 
+.prof-notes::before {
+    content: "";
+    border-left: 2px solid #fff;
+    height: 100%;
+    position: absolute;
+    left: -2%;
+}
+
+.comment p,
+.prof-notes p {
+    margin: 0;
+    padding: 3px;
+}
+
+.prof-notes {
+    background-color: rgba(94, 177, 255, 0.315);
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #4da9ff;
+}
+
+.ln {
+    background-color: #7ed6ff5e;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px dashed #fff;
+}
+
+.ln::before {
+    content: "LECTURE NOTES:";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    border-color: #fff;
+}
+
+::selection {
+    background-color: #4d5c7993;
 }

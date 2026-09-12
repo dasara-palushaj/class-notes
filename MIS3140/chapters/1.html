@@ -4,7 +4,7 @@
 </head>
 <body>
     <div class="ch-name">
-        <h2>Database Systems</h2>
+        <h1>Database Systems</h1>
         <hr>    
     </div>
     <article class="cb">
@@ -13,7 +13,7 @@
             <li>Data is managed most efficiently when stored in a database.</li>
             <li>Databases evolved from computer file systems.</li>
         </ul>
-        <h3>Why Databases?</h3>
+        <h2>Why Databases?</h2>
         <ul>
             <li>Business</li>
             <ul>
@@ -24,7 +24,7 @@
             <li>Administration</li>
         </ul>
         <p class="def">DATA: <i>raw</i> facts, or facts that have not yet been processed to reveal their meaning to the end user.</p>
-        <h3>Data vs. Information</h3>
+        <h2>Data vs. Information</h2>
         <p>Data; the building blocks of information. Information; the result of processing data to reveal meaning; requires context.</p>
         <p>Data -> Infomation -> Knowledge</p>
         <p class="def">INFORMATION: the result of processing raw data to reveal its meaning. Consists of transformed data and facilitates decison making.</p>
@@ -37,19 +37,19 @@
             <li>Good decision making is the key to organizational survival in a global environment.</li>
         </ul>
         <p class="def">DATA MANAGEMENT: a process that focuses on data collection, storage, and retrieval. <i>Common data management functions include additon, deletion, modification, and listing.</i></p>
-        <h3>Introducing the Database</h3>
+        <h2>Introducing the Database</h2>
         <p>Databases store two things: end-user data and metadata.</p>
         <p class="def">DATABASE: a shared, integrated computer structure that houses a collection of related data. <i>Contains two types of data: user data (raw facts) and metadata.</i></p>
         <p class="def">METADATA: data <i>ABOUT</i> data; data about data characteristics and relationships. <i>i.e. name of data element, type of values (numeric, dates, text), and whether can be left empty.</i></p>
         <p class="def">DATABASE MANAGEMENT SYSTEM (DBMS): collection of programs that manages the database structure and controls access to the data stored in the database.</p>
-        <h3>The DBMS as an Intermediary</h3>
+        <h2>The DBMS as an Intermediary</h2>
         <p><mark>END USER APPS –– DBMS –– DATABASE</mark></p>
         <p class="subtitle">End Users with their Apps can access the database only through DBMS, which integrates many users' views of the data.</p>
         <figure>
             <img src="../imgs/dbms-intermediary.png">
             <figcaption>The DBMS manages the interaction between the End User and the Database</figcaption>
         </figure>
-        <h3>Advantages of a DBMS</h3>
+        <h2>Advantages of a DBMS</h2>
         <ul>
             <li>Improved data sharing</li>
             <p class="subtitle">End users have better access to more and better-managed data; quicker responses.</p>
@@ -78,5 +78,101 @@
         <p>Centralized: data located at a single site.</p>
         <p>Distributed: data spread across several different sites.</p>
         <p>Cloud: created & maintained via cloud data services.</p>
+        <h4>By Use</h4>
+        <p>Operational: supports day-to-day transactions (also called transactional/production database).</p>
+        <p>Analytical: stores historical data for tactical/strategic decisions–data warehouses, OLAP, BI.</p>
+        <ul>
+            <li class="def">DATA WAREHOUSE: stores data in a format optimized for decision support.</li>
+            <li class="def">ONLINE ANALYTICAL PROCESSING (OLAP): enable retrieving, processing, and modeling data from the data warehouse.</li>
+            <li class="def">BUSINESS INTELLIGENCE: captures and processes business data to generate information that support decision making.</li>
+        </ul>
+        <h4>By Structure</h4>
+        <p>Unstructured: data in its original state.</p>
+        <p>Structured: data formatted for processing.</p>
+        <p>Semistructured: partially processed (i.e. XML)</p>
+        <div class="comment">
+            <p>Extensible Markup Language (XML) represents data elements in textual format. Supported by XML databases.</p>
+        </div>
+        <h4>Database Type Table</h4>
+        <img src="../imgs/typesofdb.png">
+        <h3>Why Database Design Matters</h3>
+        <p>Well-Designed: facilitates data management and generates accurate, valuable information.</p>
+        <p>Poorly Designed: causes difficult-to-trace errors and bad decison making.</p>
+        <p class="def">DATABASE DESIGN: the process that yields the description of the database structure and determines the database components. The second phase of the database cycle.</p>
+        <h2>Why Study File Systems?</h2>
+        <ul>
+            <li>Makes the complexity of database design easier to understand.</li>
+            <li>Helps avoid similar problems when using a DBMS.</li>
+            <li>Useful knowledge when converting a file system to a database.</li>
+        </ul>
+        <h2>Manual File Systems</h2>
+        <p>Composed of file folders, each tagged and kept in a cabinet, organized by expected use.</p>
+        <p><mark>Payroll, Inventory, Customers, Orders</mark></p>
+        <p>Cumbersome for large data collections–served small data needs adequately.</p>
+        <h2>Computerized File Systems</h2>
+        <p>The Data Processing (DP) Specialist</p>
+        <ul>
+            <li>Converted computer file structures from the manual system.</li>
+            <li>Wrote software to manage the data.</li>
+            <li>Designed the application process.</li>
+        </ul>
+        <h4>Contents of the Customer File</h4>
+        <img src="../imgs/customerfile.png">
+        <h3>Each File Had Its Own Program</h3>
+        <p>As the number of files grew, each was owned by the department that created it.</p>
+        <p>Payroll Program -> Payroll File. Inventory Program -> Inventory File. Sales Program -> Sales File.</p>
+        <p class="subtitle">No sharing between programs–each silo duplicates related data independently.</p>
+        <h4>Simple File System</h4>
+        <img src="../imgs/filesystem.png">
+        <p class="subtitle">Spreadsheets like MS Excel are often used as a "database substitute," even when a real database would serve the task far better.</p>
+        <h3>File System Limitations</h3>
+        <ul>
+            <li>Extensive Programming; due to data dependence & structural dependence.</li>
+            <li>No Ad Hoc Queries</li>
+            <li>Complex Administration</li>
+            <li>Rigid Structures</li>
+            <li>Weak Security</li>
+        </ul>
+        <h2>Structural & Data Dependence</h2>
+        <p>Structural DEPENDENCE: access to a file depends on its own structure.</p>
+        <p>Structural INDEPENDENCE: structure can change without affecting data access.</p>
+        <p>Data DEPENDENCE: data access changes when storage characteristics change.</p>
+        <p>Data INDEPENDENCE: storage characteristics don't affect data access.</p>
+        <h2>Logical vs. Physical Data Format</h2>
+        <p>Logical Format: how a human views the data.</p>
+        <p>Physical Format: how the computer must work with the data.</p>
+        <h2>Islands of Information</h2>
+        <p>Organizational structure promotes storing the same data in different, disconnected locations.</p>
+        <ul>
+            <li>Sales Dept. Customer Copy</li>
+            <li>Billing Dept. Customer Copy</li>
+            <li>Support Dept. Customer Copy</li>
+        </ul>
+        <div class="comment">
+            <p>Data redundancy -> Data in different locations is unlikely to be updated consistently -> Data anomalies</p>
+        </div>
+        <h2>Data Anomalies</h2>
+        <p>Abnormalities when changes to redundant data are not made correctly everywhere; lead to data inconsistencies and data integrity problems.</p>
+        <ul>
+            <li>Update Anomaly: a change is applied in one place but not another.</li>
+            <p class="subtitle">when changing an agent's phone number</p>
+            <li>Insertion Anomaly: new data cannot be added without unrelated data.</li>
+            <p class="subtitle">when creating a new agent</p>
+            <li>Deletion Anomaly: removing data unintentionally removes other data.</li>
+            <p class="subtitle"> when an agent leaves the organization</p>
+        </ul>
+        <p class="def">DATA ANOMALIES: abnormalities when all changes in redundant data are not made correctly; data anomalies lead to data inconsistencies thereby creating data integrity problem.</p>
+        <h3>Lack of Data-Modeling Skills</h3>
+        <p>Most users lack the skill to properly design databases, despite many personal productivity tools being available.</p>
+        <p>Good data modeling facilitates communication between the designer, user, and developer.</p>
+        <h2>Database Systems</h2>
+        <p>Logically related data stored in a single logical data repository</p>
+        <ul>
+            <li>May be physically distributed among multiple storage facilities.</li>
+            <li>A DBMS eliminates most of the file system's problems.</li>
+        </ul>
+        <h4>Contrasting Database & File System</h4>
+        <img src="../imgs/contrastingsys.png">
+        
     </article>
 </body>
